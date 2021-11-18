@@ -1,0 +1,39 @@
+body{
+    font-family:'Courier New', Courier, monospace;
+    background-color: lightgoldenrodyellow;
+}
+
+h1{
+    text-align: center;
+}
+#survey_form{
+    width: 80%;
+    background-color: white;
+    border-radius: 30px;
+    border: 2px solid gray;
+    margin: 40px auto;
+    padding: 20px;
+    font-weight:600;
+}
+
+#survey_form div{
+    margin: 10px auto;
+}
+
+fieldset{
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+#submit{
+    text-transform: capitalize;
+    display: block;
+    margin: auto;
+    border: none;
+    padding: 15px;
+    background-color: rebeccapurple;
+}
+
+#submit:hover{
+    background-color: yellow;
+}

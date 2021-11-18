@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="upper">
+        <form id="survey_form" action="/my-handling-form-page" method="post">
+        <h1>Application for Permission to Attend my Party</h1>
+        <p><b>Note: </b>For is to be completed 21 days prior to the party date</p>
+        <!-- -----------------------------Personal details-------------------------- -->
+        <fieldset>
+            <legend>Personal Details</legend>
+            <!-- declares the purpose of the form  -->
+            <div>
+                <label id="name-label" for="name">Name:</label>
+                <input type="text" required name="user_name" id="name" placeholder="Enter name here">
+            </div>
+            <div>
+                <label for="address" id="address">Address:</label>
+                <input type="text" required name="user-address" id="address" placeholder="Enter address here">
+            </div>
+            <div>
+                <label for="email" id="email">Email:</label>
+                <input type ="text" required name= "user_email" id="email" placeholder="Enter email here">
+            </div>
+            <div>
+                <label for="phone_number" id="phone_number">Phone Number:</label>
+                <input type="text" required name="user_phone_number" id=phone_number placeholder="Enter 10 digit number" minlength="10" maxlength="10">
+            </div>        
+            <div>
+                <label for="iq" class="iq">IQ:</label>
+                <input type="text" required name="user_iq" id="iq" placeholder="Enter your IQ">
+            </div>
+            <div>
+                <label for="gender" class="gender">Gender</label>
+                <p>
+                    <input type="radio" name="gender" value="male" checked>Male<br>
+                    <input type="radio" name="gender" value="female">Female<br>
+                    <input type="radio" name="gender" value="other">Other
+                </p>
+            </div>
+            <div>
+                <label for="date" class="date">Date of Proposed Party</label>
+                <input type="date" name="party">
+            </div>
+        </fieldset>
+        <!-- Checkboxes -->
+        <fieldset>
+            <div>
+                <label for="Qualities">Check all that apply</label>
+                <p>
+                    <input type="checkbox" name="musical" value="musical">I play musical instruments(s)<br>
+                    <input type="checkbox" name="morethan1" value="morethan18">I am above 18 years of age<br>
+                    <input type="checkbox" name="fulltimeworker" value="fulltimeworker">I have a full time job<br>
+                    <input type="checkbox" name="wellmannered" value="wellmannered">I am well-mannered<br>
+                    <input type="checkbox" name="bringmyownfood" value="bringmyownfood">I will bring my own food<br>
+
+                </p>
+            </div>
+            </fieldset>
+        <!-- Dropdown menus -->
+        <fieldset>
+            <label for="politics">Political leaning:</label>
+            <select name="dropdown" id="dropdown">
+                <option value="left">Left Wing</option>
+                <option value="right">Right Wing</option>
+                <option value="consevative">Conservative</option>
+                <option value="nazi">Nazi</option>
+            </select>
+            <label for="education">Education level Completed:</label>
+            <select name="education" id="education">
+                <option value="graduate">Graduate</option>
+                <option value="postgraduate">Post-Graduate</option>
+                <option value="highschool">High-School</option>
+                <option value="none">None</option>
+            </select>
+        </fieldset>
+        <!-- Text Area -->
+        <fieldset>
+            <legend>Essay Section</legend>
+            <div>
+                <label for="reason"></label>
+                <p>In 50 words explain why you wish to attend the party</p>
+                <textarea id="reason" name="user_message" rows="4" cols="50" placeholder="Enter text here"></textarea>
+            </div>
+            <div>
+                <label for="msg">Please Enter the contact details of 2 references</label><br>
+                <textarea id="contact" name="reference_contacts" rows="4" cols="50" placeholder="Enter text here"></textarea>
+            </div>
+            <p>Upload Police Clearance Certificate, Bank Statement and Medical Certificates here:
+                <button>Attach Files</button>
+            </p>
+            </fieldset>
+            <div id="button">
+                <button type="submit" id="submit">Send your application</button>
+            </div>
+     </form>
+    </div>
+    
+</body>
+</html>
